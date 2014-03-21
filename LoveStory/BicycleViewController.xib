@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BicycleViewController">
+            <connections>
+                <outlet property="ballon" destination="2qA-6N-lLv" id="vcr-ee-QpW"/>
+                <outlet property="bicycleBackWheel" destination="Bmx-XZ-90i" id="Y2J-Cj-N2d"/>
+                <outlet property="bicycleBody" destination="FQa-4m-vsl" id="lGg-xS-quH"/>
+                <outlet property="bicycleFrontWheel" destination="45l-cE-YND" id="jEK-fC-Kva"/>
+                <outlet property="view" destination="44T-lr-rtA" id="yf3-in-BEs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="44T-lr-rtA">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" id="jKN-ro-ld4" userLabel="Image View bg">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bicycle_body" id="FQa-4m-vsl">
+                    <rect key="frame" x="122" y="301" width="166" height="153"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ballon" id="2qA-6N-lLv">
+                    <rect key="frame" x="73" y="245" width="108" height="96"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bicycle_tyre_front" id="45l-cE-YND">
+                    <rect key="frame" x="235" y="392" width="77" height="82"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bicycle_tyre_back" id="Bmx-XZ-90i">
+                    <rect key="frame" x="125" y="393" width="75" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="320" height="480"/>
+        <image name="ballon" width="108" height="96"/>
+        <image name="bicycle_body" width="166" height="153"/>
+        <image name="bicycle_tyre_back" width="75" height="80"/>
+        <image name="bicycle_tyre_front" width="77" height="82"/>
+    </resources>
+</document>
