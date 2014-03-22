@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BasePageViewController.h"
 
-@interface GuoBaoViewController : UIViewController
+@interface GuoBaoViewController : BasePageViewController
+@property (weak, nonatomic) IBOutlet UIPlaceHolderTextView *textView;
+@property (weak, nonatomic) IBOutlet UIImageView *guougo;
 
 @end

@@ -7,13 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BasePageViewController.h"
 
-@interface CloudViewController : UIViewController
+@class UIPlaceHolderTextView;
+@interface CloudViewController : BasePageViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *cloud1;
 @property (weak, nonatomic) IBOutlet UIImageView *cloud2;
 @property (weak, nonatomic) IBOutlet UIImageView *cloud3;
+@property (weak, nonatomic) IBOutlet UIImageView *cloud4;
 
 @property (weak, nonatomic) IBOutlet UIImageView *plane;
+@property (weak, nonatomic) IBOutlet UIPlaceHolderTextView *textView;
 
 @end

@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none">
     <dependencies>
         <deployment version="1280" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CloudViewController">
             <connections>
                 <outlet property="cloud1" destination="Sxe-8M-a4k" id="mJ0-ho-cmJ"/>
                 <outlet property="cloud2" destination="pwh-Ln-SrW" id="IzE-GQ-Wla"/>
+                <outlet property="cloud3" destination="gmp-mk-1GA" id="uMm-bu-ZNK"/>
+                <outlet property="cloud4" destination="hWE-37-VHf" id="OFf-K3-AND"/>
                 <outlet property="plane" destination="dK2-ud-ngg" id="Ajr-Qr-pIc"/>
+                <outlet property="textView" destination="47k-8C-QoZ" id="BFZ-0E-scA"/>
                 <outlet property="view" destination="ZeJ-wY-Hjx" id="k1q-a2-qgU"/>
             </connections>
         </placeholder>
@@ -38,6 +41,21 @@
                     <rect key="frame" x="48" y="51" width="70" height="43"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud_1" id="hWE-37-VHf" userLabel="Image View - cloud_4">
+                    <rect key="frame" x="81" y="114" width="70" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="47k-8C-QoZ" customClass="UIPlaceHolderTextView">
+                    <rect key="frame" x="20" y="195" width="280" height="211"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.31764705879999999" green="0.31764705879999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="HuE-VX-CgG"/>
+                    </connections>
+                </textView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

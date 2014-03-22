@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BasePageViewController.h"
 
-@interface RailViewController : UIViewController
+@interface RailViewController : BasePageViewController
+@property (weak, nonatomic) IBOutlet UIPlaceHolderTextView *textView;
+@property (weak, nonatomic) IBOutlet UIImageView *train;
 
 @end

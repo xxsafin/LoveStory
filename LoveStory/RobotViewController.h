@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BasePageViewController.h"
 
-@interface RobotViewController : UIViewController
+@interface RobotViewController : BasePageViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *robot;
+@property (weak, nonatomic) IBOutlet UIPlaceHolderTextView *textView;
 
 @end

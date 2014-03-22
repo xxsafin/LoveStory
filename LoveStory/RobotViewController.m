@@ -10,7 +10,7 @@
 #import "Params.h"
 #import "UIImage+Overlay.h"
 
-@interface RobotViewController ()
+@interface RobotViewController ()<UIGestureRecognizerDelegate>
 {
     NSInteger _currentColorIndex;
     NSArray *_colors;
@@ -32,8 +32,20 @@
 
 - (void)viewDidLoad
 {
+    if([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]){
+        self.navigationController.interactivePopGestureRecognizer.delegate = self;
+    }
+    
+    self.baseTextView = _textView;
+    self.pageViewType = kPageViewTypeRobot;
+    
+    UITapGestureRecognizer *tap =[[UITapGestureRecognizer alloc] init];
+    [tap addTarget:[AlertManager sharedAlertManager] action:@selector(pressSave)];
+    [tap setNumberOfTapsRequired:1];
+    [_robot setUserInteractionEnabled:YES];
+    [_robot addGestureRecognizer:tap];
+    
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -77,6 +89,11 @@
     
     self.robot.image = [[UIImage imageNamed:@"robot"] imageWithOverlayColor:UIColorFromRGB([[_colors objectAtIndex:_currentColorIndex] integerValue])];
 }
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 
 - (void)didReceiveMemoryWarning
 {

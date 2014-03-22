@@ -7,15 +7,21 @@
 //
 
 #define STEP 5
+#import "Params.h"
 
 #import "BicycleViewController.h"
+#import "UIPlaceHolderTextView.h"
+#import "PageViewControllerFactory.h"
 
-@interface BicycleViewController ()
+@interface BicycleViewController ()<UIGestureRecognizerDelegate , UITextViewDelegate, UIAlertViewDelegate, UIKeyboardViewControllerDelegate>
+{
+    UIAlertView *_saveAlert;
+}
 
 @end
 
 @implementation BicycleViewController
-static int count = 0;
+static int count;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,15 +34,22 @@ static int count = 0;
 
 - (void)viewDidLoad
 {
+    if([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]){
+        self.navigationController.interactivePopGestureRecognizer.delegate = self;
+    }
+
+    self.baseTextView = _textView;
+    self.pageViewType = kPageViewTypeBicycle;
+    
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    
+    count = 0;
     self.bicycleBody.transform = CGAffineTransformMakeTranslation( -320, 0);
     self.ballon.transform = CGAffineTransformMakeTranslation( -320, 0);
+    self.saveButton.transform = CGAffineTransformMakeTranslation( -320, 0);
     
     self.bicycleBackWheel.center = CGPointMake(self.bicycleBackWheel.center.x - 320, self.bicycleBackWheel.center.y);
     self.bicycleFrontWheel.center = CGPointMake(self.bicycleFrontWheel.center.x - 320, self.bicycleFrontWheel.center.y);
@@ -61,6 +74,7 @@ static int count = 0;
         
         self.bicycleBody.transform = CGAffineTransformTranslate(self.bicycleBody.transform, 320 / STEP, 0);
         self.ballon.transform = CGAffineTransformTranslate(self.ballon.transform, 320 / STEP, 0);
+        self.saveButton.transform = CGAffineTransformTranslate(self.saveButton.transform, 320 / STEP, 0);
     } completion:^(BOOL finished) {
         
         count ++;
@@ -75,6 +89,10 @@ static int count = 0;
     return YES;
 }
 
+#pragma mark - Save Button
+- (IBAction)pressSave:(id)sender {
+    [[AlertManager sharedAlertManager] pressSave];
+}
 
 - (void)didReceiveMemoryWarning
 {

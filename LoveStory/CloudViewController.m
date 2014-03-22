@@ -7,10 +7,11 @@
 //
 
 #import "CloudViewController.h"
+#import "UIPlaceHolderTextView.h"
 
 #import "Params.h"
 
-@interface CloudViewController ()
+@interface CloudViewController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -27,15 +28,25 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    
+    self.pageViewType = kPageViewTypeCloud;
+    self.baseTextView = _textView;
     [self cloudStartMoving:self.cloud1];
     [self cloudStartMoving:self.cloud2];
     [self cloudStartMoving:self.cloud3];
     
     [self planeStartMoving:self.plane];
     
+    if([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]){
+        self.navigationController.interactivePopGestureRecognizer.delegate = self;
+    }
+    
+    UITapGestureRecognizer *tap =[[UITapGestureRecognizer alloc] init];
+    [tap addTarget:[AlertManager sharedAlertManager] action:@selector(pressSave)];
+    [tap setNumberOfTapsRequired:1];
+    [_cloud4 setUserInteractionEnabled:YES];
+    [_cloud4 addGestureRecognizer:tap];
+    
+    [super viewDidLoad];
 }
 
 - (void)cloudStartMoving:(UIImageView *)cloud
@@ -86,6 +97,11 @@
         [self planeScroll:plane];
     }];
 }
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 
 - (void)didReceiveMemoryWarning
 {

@@ -1,0 +1,14 @@
+/* 
+  guobaoString.strings
+  LoveStory
+
+  Created by Xu Xian on 14-3-22.
+  Copyright (c) 2014年 Xu Xian. All rights reserved.
+*/
+
+"ALERT_TITLE" = "果果说";
+"ALERT_CONFIRM" = "恩恩~";
+"ALERT_CANCEL" = "你妹呀~";
+"ALERT_SAVE_TEXT" = "宝宝你要保存吗？";
+
+"TEXT_VIEW_PLACEHOLDER" = "写果果的坏话就打pp";

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BasePageViewController.h"
 
-@interface CoffeeViewController : UIViewController
+@interface CoffeeViewController : BasePageViewController
+@property (weak, nonatomic) IBOutlet UIPlaceHolderTextView *textView;
+@property (weak, nonatomic) IBOutlet UIImageView *coffee;
 
 @end

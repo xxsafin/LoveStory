@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BasePageViewController.h"
 
-@interface BicycleViewController : UIViewController
+@class UIPlaceHolderTextView;
+@interface BicycleViewController : BasePageViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *bicycleBody;
 @property (weak, nonatomic) IBOutlet UIImageView *bicycleBackWheel;
 @property (weak, nonatomic) IBOutlet UIImageView *bicycleFrontWheel;
 @property (weak, nonatomic) IBOutlet UIImageView *ballon;
 
+@property (weak, nonatomic) IBOutlet UIButton *saveButton;
+@property (weak, nonatomic) IBOutlet UIPlaceHolderTextView *textView;
 @end

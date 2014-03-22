@@ -8,7 +8,7 @@
 
 #import "SunflowerViewController.h"
 
-@interface SunflowerViewController ()
+@interface SunflowerViewController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -25,9 +25,26 @@
 
 - (void)viewDidLoad
 {
+    if([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]){
+        self.navigationController.interactivePopGestureRecognizer.delegate = self;
+    }
+    
+    self.baseTextView = _textView;
+    self.pageViewType = kPageViewTypeSunflower;
+    
+    UITapGestureRecognizer *tap =[[UITapGestureRecognizer alloc] init];
+    [tap addTarget:[AlertManager sharedAlertManager] action:@selector(pressSave)];
+    [tap setNumberOfTapsRequired:1];
+    [_dog setUserInteractionEnabled:YES];
+    [_dog addGestureRecognizer:tap];
+    
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
 }
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 
 - (void)didReceiveMemoryWarning
 {
