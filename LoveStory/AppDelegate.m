@@ -16,6 +16,8 @@
     
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
     
+//    UINavigationController *controller = ;
+    
     return YES;
 }
 							

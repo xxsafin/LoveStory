@@ -95,7 +95,7 @@
                                                       message:nil
                                                      delegate:self
                                             cancelButtonTitle:@"取消"
-                                            otherButtonTitles:@"和果果骑自行车" ,@"和果果看飞机", @"和果果的机器人跳舞", @"和果果坐火车", @"果果的向日葵什么时候到呀", @"果果和宝宝cosplay", @"今天累了,和果果睡大觉", nil];
+                                            otherButtonTitles:@"和果果骑自行车~" ,@"和果果看飞机~", @"和果果的机器人跳舞~", @"和果果坐高铁~", @"果果的向日葵什么时候到呀~", @"果果和宝宝cosplay~", @"今天累了,和果果睡大觉~", nil];
         
     }
     [_createPageAlert show];

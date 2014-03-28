@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 Xu Xian. All rights reserved.
 //
 
-#define STEP 5
+#define STEP 4
 #import "Params.h"
 
 #import "BicycleViewController.h"

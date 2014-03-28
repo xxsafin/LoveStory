@@ -33,13 +33,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="N1d-ke-xon">
-                                <rect key="frame" x="128" y="188" width="65" height="57"/>
+                                <rect key="frame" x="124" y="192" width="65" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="titleEdgeInsets" minX="-26" minY="31" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="16" minY="-23" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="进来吧" image="button">
+                                <state key="normal" image="button">
                                     <color key="titleColor" red="0.03421532847" green="0.67583827549999997" blue="0.85832002740000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -83,13 +83,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bI9-Ir-afP">
-                                <rect key="frame" x="219" y="48" width="68" height="57"/>
+                                <rect key="frame" x="211" y="23" width="83" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <inset key="titleEdgeInsets" minX="-36" minY="31" maxX="0.0" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="84" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="15" minY="-23" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="新建日记" image="button">
+                                <state key="normal" title="新建日记">
                                     <color key="titleColor" red="0.034215328467153285" green="0.67583827554744524" blue="0.85832002737226276" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -98,13 +98,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zEN-L3-cgX">
-                                <rect key="frame" x="31" y="100" width="68" height="57"/>
+                                <rect key="frame" x="32" y="87" width="68" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <inset key="titleEdgeInsets" minX="-32" minY="31" maxX="0.0" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="50" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="16" minY="-23" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="查看日记" image="button">
+                                <state key="normal" title="查看日记">
                                     <color key="titleColor" red="0.03421532847" green="0.67583827549999997" blue="0.85832002740000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>

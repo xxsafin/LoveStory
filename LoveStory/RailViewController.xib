@@ -6,6 +6,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RailViewController">
             <connections>
+                <outlet property="guoguoQin" destination="6lT-PW-PRW" id="KNK-hH-kmP"/>
+                <outlet property="spot1" destination="tcd-1w-s77" id="5s7-iK-KSP"/>
+                <outlet property="spot2" destination="PmE-XB-rDx" id="stk-xJ-TuE"/>
+                <outlet property="spot3" destination="Oe1-td-LV6" id="7da-s7-e43"/>
+                <outlet property="spot4" destination="pC1-bE-uEH" id="F2b-pl-jNA"/>
+                <outlet property="spot5" destination="Bp8-KJ-bqk" id="tQx-gz-LSc"/>
                 <outlet property="textView" destination="r8G-Jj-xPF" id="N4q-fV-r1U"/>
                 <outlet property="train" destination="gS4-zv-wtc" id="H6D-es-jvU"/>
                 <outlet property="view" destination="8Qv-YM-d0O" id="zwF-u6-fN5"/>
@@ -24,8 +30,24 @@
                     <rect key="frame" x="123" y="313" width="192" height="91"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rail_spot" translatesAutoresizingMaskIntoConstraints="NO" id="tcd-1w-s77">
-                    <rect key="frame" x="136" y="331" width="13" height="16"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rail_spot" translatesAutoresizingMaskIntoConstraints="NO" id="tcd-1w-s77" userLabel="Image View - rail_spot1">
+                    <rect key="frame" x="134" y="332" width="13" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rail_spot" translatesAutoresizingMaskIntoConstraints="NO" id="PmE-XB-rDx" userLabel="Image View - rail_spot2">
+                    <rect key="frame" x="196" y="318" width="13" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rail_spot" translatesAutoresizingMaskIntoConstraints="NO" id="Oe1-td-LV6" userLabel="Image View - rail_spot3">
+                    <rect key="frame" x="223" y="341" width="13" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rail_spot" translatesAutoresizingMaskIntoConstraints="NO" id="pC1-bE-uEH" userLabel="Image View - rail_spot4">
+                    <rect key="frame" x="252" y="360" width="13" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rail_spot" translatesAutoresizingMaskIntoConstraints="NO" id="Bp8-KJ-bqk" userLabel="Image View - rail_spot5">
+                    <rect key="frame" x="292" y="395" width="13" height="16"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="train" translatesAutoresizingMaskIntoConstraints="NO" id="gS4-zv-wtc">
@@ -43,6 +65,10 @@
                         <outlet property="delegate" destination="-1" id="kdK-YK-eqF"/>
                     </connections>
                 </textView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="qinqin" translatesAutoresizingMaskIntoConstraints="NO" id="6lT-PW-PRW">
+                    <rect key="frame" x="120" y="294" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
@@ -50,6 +76,7 @@
     </objects>
     <resources>
         <image name="background" width="320" height="480"/>
+        <image name="qinqin" width="60" height="60"/>
         <image name="rail_line" width="192" height="91"/>
         <image name="rail_spot" width="13" height="16"/>
         <image name="train" width="320" height="120"/>

@@ -13,4 +13,12 @@
 @property (weak, nonatomic) IBOutlet UIPlaceHolderTextView *textView;
 @property (weak, nonatomic) IBOutlet UIImageView *train;
 
+@property (weak, nonatomic) IBOutlet UIImageView *spot1;
+@property (weak, nonatomic) IBOutlet UIImageView *spot2;
+@property (weak, nonatomic) IBOutlet UIImageView *spot3;
+@property (weak, nonatomic) IBOutlet UIImageView *spot4;
+@property (weak, nonatomic) IBOutlet UIImageView *spot5;
+
+
+@property (weak, nonatomic) IBOutlet UIImageView *guoguoQin;
 @end

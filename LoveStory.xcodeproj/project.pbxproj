@@ -14,6 +14,7 @@
 		D73519CB18C618980045F60E /* GuoBaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D73519CA18C618980045F60E /* GuoBaoViewController.m */; };
 		D73519CE18C618A20045F60E /* CoffeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D73519CD18C618A20045F60E /* CoffeeViewController.m */; };
 		D73519D218C622110045F60E /* Params.m in Sources */ = {isa = PBXBuildFile; fileRef = D73519D118C622110045F60E /* Params.m */; };
+		D7A767AD18DE8868003C885F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A767AC18DE8868003C885F /* QuartzCore.framework */; };
 		D7D7156418DD7DEC00F5C457 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7D7156618DD7DEC00F5C457 /* Localizable.strings */; };
 		D7D7156C18DD823900F5C457 /* ViewDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D7156B18DD823900F5C457 /* ViewDecorator.m */; };
 		D7D7157218DD8C6E00F5C457 /* UIKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D7156F18DD8C6E00F5C457 /* UIKeyboardView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -86,6 +87,7 @@
 		D73519CD18C618A20045F60E /* CoffeeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoffeeViewController.m; sourceTree = "<group>"; };
 		D73519D018C622110045F60E /* Params.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Params.h; sourceTree = "<group>"; };
 		D73519D118C622110045F60E /* Params.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Params.m; sourceTree = "<group>"; };
+		D7A767AC18DE8868003C885F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D7D7156518DD7DEC00F5C457 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D7D7156818DD7E3700F5C457 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		D7D7156A18DD823900F5C457 /* ViewDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewDecorator.h; path = ViewDecorator/ViewDecorator.h; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7A767AD18DE8868003C885F /* QuartzCore.framework in Frameworks */,
 				D7D7157818DD8F4300F5C457 /* CoreData.framework in Frameworks */,
 				D7F00A2B18BF70E4003C98BD /* CoreGraphics.framework in Frameworks */,
 				D7F00A2D18BF70E4003C98BD /* UIKit.framework in Frameworks */,
@@ -328,6 +331,7 @@
 		D7F00A2718BF70E4003C98BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D7A767AC18DE8868003C885F /* QuartzCore.framework */,
 				D7D7157718DD8F4300F5C457 /* CoreData.framework */,
 				D7F00A2818BF70E4003C98BD /* Foundation.framework */,
 				D7F00A2A18BF70E4003C98BD /* CoreGraphics.framework */,
