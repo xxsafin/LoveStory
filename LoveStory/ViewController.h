@@ -16,5 +16,4 @@
 @property (weak, nonatomic) IBOutlet UIButton *openDairy;
 @property (weak, nonatomic) IBOutlet UIButton *createPage;
 
-
 @end

@@ -12,4 +12,8 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
++(AppDelegate *)sharedAppDelegate;
+-(void)openRegisterWindow;
+-(void)removeRegisterWindow;
+
 @end

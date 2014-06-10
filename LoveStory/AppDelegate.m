@@ -7,18 +7,66 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+
+#import "LoginViewController.h"
+
+static AppDelegate *sharedAppDelegate;
 
 @implementation AppDelegate
-
+{
+    LoginViewController *_popupLoginController;
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    sharedAppDelegate = self;
     
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
     
-//    UINavigationController *controller = ;
+    self.window =[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    navController.navigationBarHidden = YES;
+    self.window.rootViewController = navController;
+    
+    [self.window makeKeyAndVisible];
+    
+    [self openRegisterWindow];
     
     return YES;
+}
+
+-(void)openRegisterWindow
+{
+    
+    if(_popupLoginController)
+    {
+        return;
+    }
+    
+    _popupLoginController = [[LoginViewController alloc] init];
+    
+    [self.window.rootViewController.view addSubview:_popupLoginController.view];
+    _popupLoginController.view.frame = CGRectMake(0,
+                                             0,
+                                             _popupLoginController.view.frame.size.width,
+                                             _popupLoginController.view.frame.size.height);
+    
+    _popupLoginController.view.transform = CGAffineTransformIdentity;
+}
+
+-(void)removeRegisterWindow
+{
+    if(_popupLoginController)
+    {
+        [_popupLoginController.view removeFromSuperview];
+        _popupLoginController = nil;
+    }
+}
+
+
++(AppDelegate *)sharedAppDelegate
+{
+    return sharedAppDelegate;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
